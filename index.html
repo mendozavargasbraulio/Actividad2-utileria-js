@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Utilería JS</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Utilería JS</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de validación</h2>
+            <p> Ingresa los siguientes datos para probar la librería. </p>
+            <form id="formRegistro">
+                <div>
+                    <label for="nombre"> Nombre: </label>
+                    <input type="text" id="nombre" placeholder="Papu" >
+                    <p id="errorNombre"></p>
+                </div>
+                <div>
+                    <label for="apellido"> Apellidos: </label>
+                    <input
+                        type="text" id="apellido" placeholder="Aquino Samarripa" >
+                    <p id="errorApellido"></p>
+                </div>
+                <div>
+                    <label for="telefono"> Teléfono: </label>
+                    <input type="text" id="telefono" maxlength="10" placeholder="9511234567">
+                    <p id="errorTelefono"></p>
+                </div>
+                <div>
+                    <label for="fechaNacimiento">Fecha de nacimiento: </label>
+                    <input type="date" id="fechaNacimiento" >
+                    <p id="errorFecha"></p>
+                </div>
+                <div>
+                    <label for="codigo"> Código de seguridad (máximo 4 dígitos): </label>
+                    <input type="text" id="codigo" maxlength="4" placeholder="1234" >
+                    <p id="errorCodigo"></p>
+                </div>
+                <button type="submit">
+                    Validar datos
+                </button>
+            </form>
+
+            <button type="button" id="regresarLogin">
+                Regresar al login
+            </button>
+
+        </section>
+        </main>
+        <!-- Ventana modal -->
+        <div id="modalEdad" class="modal">
+                <div class="contenido-modal">
+                    <h2>Datos validados</h2>
+                    <p>Tu edad es: <span id="edadCalculada"></span> años. </p>
+                    <p id="mensajeEdad"></p>
+                    <button type="button" id="cerrarModal"> Cerrar </button>
+        </div>
+    </div>
+    <script src="js/utileria.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>

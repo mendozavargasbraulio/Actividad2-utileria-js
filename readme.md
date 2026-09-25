@@ -29,6 +29,12 @@ Para utilizar la librería dentro de un archivo HTML, primero incluye el archivo
 
 Después de cargar el archivo, las funciones pueden utilizarse directamente desde JavaScript.
 
+Para usarla mediante un CND basta con referenciar la libreria de esta forma
+```html
+<script src="https://cdn.jsdelivr.net/gh/mendozavargasbraulio/utileria-js@main/js/utileria.js"></script>
+```
+
+
 ---
 
 # Ejemplos de uso
@@ -250,4 +256,4 @@ Si los datos son correctos se abre una ventana modal que muestra la edad calcula
 
 En el video se muestra el uso de la librería, las validaciones realizadas y el resultado dentro de las páginas.
 
-**Video:** 
+**Video:** [click aqui jeje](https://drive.google.com/file/d/1Gt3dClEgRK4lAS7yfpFGXOo8IQVZfI1M/view?usp=sharing)
